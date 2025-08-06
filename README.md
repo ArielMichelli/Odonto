@@ -65,7 +65,7 @@
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tuusuario/odonto-web.git
+git clone https://github.com/ArielMichelli/odonto-web.git
 
 # Navegar al directorio
 cd odonto-web
@@ -213,9 +213,9 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ## 👨‍💻 Autor
 
-**Tu Nombre**
+**A.M.**
 
--   GitHub: [@tuusuario](https://github.com/tuusuario)
+-   GitHub: [@ArielMichelli](https://github.com/ArielMichelli)
 -   LinkedIn: [Tu Perfil](https://linkedin.com/in/tuperfil)
 -   Email: tu@email.com
 
@@ -235,12 +235,12 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ### ⭐ ¡Si te gustó este proyecto, no olvides darle una estrella! ⭐
 
-**¿Te sirvió este proyecto? [☕ Invítame un café](https://buymeacoffee.com/tuusuario)**
+**¿Te sirvió este proyecto? [☕ Invítame un café](https://buymeacoffee.com/ArielMichelli)**
 
 </div>
 
 ---
 
 <div align="center">
-  <sub>Hecho con ❤️ por <a href="https://github.com/tuusuario">Tu Nombre</a></sub>
+  <sub>Hecho con ❤️ por <a href="https://github.com/ArielMichelli">A.M.</a></sub>
 </div>
