@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import "./App.css";
 import consultorio1 from "./assets/images/consultorio1.jpg";
 import consultorio2 from "./assets/images/consultorio2.jpg";
@@ -9,6 +10,25 @@ import instrumentos4 from "./assets/images/instrumentos4.jpg";
 import pacienteImg from "./assets/images/paciente.jpg";
 
 function App() {
+	const [darkMode, setDarkMode] = useState(() => {
+		// Verificar si hay preferencia guardada en localStorage
+		const savedTheme = localStorage.getItem("darkMode");
+		return savedTheme ? JSON.parse(savedTheme) : false;
+	});
+
+	// Efecto para aplicar la clase dark al body y guardar preferencia
+	useEffect(() => {
+		if (darkMode) {
+			document.body.classList.add("dark");
+		} else {
+			document.body.classList.remove("dark");
+		}
+		localStorage.setItem("darkMode", JSON.stringify(darkMode));
+	}, [darkMode]);
+
+	const toggleDarkMode = () => {
+		setDarkMode(!darkMode);
+	};
 	return (
 		<div className="App">
 			{/* Navbar */}
@@ -47,6 +67,26 @@ function App() {
 								<a className="nav-link" href="#contacto">
 									Contacto
 								</a>
+							</li>
+							<li className="nav-item">
+								<button
+									className="btn btn-outline-primary ms-2 dark-mode-toggle"
+									onClick={toggleDarkMode}
+									aria-label="Cambiar modo oscuro"
+									title={
+										darkMode
+											? "Cambiar a modo claro"
+											: "Cambiar a modo oscuro"
+									}
+								>
+									<i
+										className={
+											darkMode
+												? "fas fa-sun"
+												: "fas fa-moon"
+										}
+									></i>
+								</button>
 							</li>
 						</ul>
 					</div>
